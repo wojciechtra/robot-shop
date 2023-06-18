@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: rabbitmq
+        app: rabbitmq
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: rabbitmq
+        app: rabbitmq
     spec:
       containers:
       - image: rabbitmq:3.7-management-alpine

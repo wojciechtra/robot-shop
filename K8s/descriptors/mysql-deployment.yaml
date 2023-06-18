@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: mysql
+        app: mysql
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: mysql
+        app: mysql
     spec:
       containers:
       - image: linuxacademycontent/rs-mysql-db:latest

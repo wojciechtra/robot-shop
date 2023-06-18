@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: payment
+        app: payment
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: payment
+        app: payment
     spec:
       containers:
       - image: linuxacademycontent/rs-payment:latest

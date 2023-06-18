@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: dispatch
+        app: dispatch
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: dispatch
+        app: dispatch
     spec:
       containers:
       - image: linuxacademycontent/rs-dispatch:latest

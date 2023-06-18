@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: web
+        app: web
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: web
+        app: web
     spec:
       containers:
       - image: linuxacademycontent/rs-web:latest

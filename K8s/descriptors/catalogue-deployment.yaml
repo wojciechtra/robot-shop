@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: catalogue
+        app: catalogue
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: catalogue
+        app: catalogue
     spec:
       containers:
       - image: linuxacademycontent/rs-catalogue:latest

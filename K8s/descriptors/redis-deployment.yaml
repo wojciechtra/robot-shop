@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: redis
+        app: redis
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: redis
+        app: redis
     spec:
       containers:
       - image: redis:4.0.6

@@ -12,13 +12,14 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        name: user
+        app: user
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
         io.kompose.service: user
+        app: user
     spec:
       containers:
       - image: linuxacademycontent/rs-user:latest
