@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        app: payment
+        name: payment
   strategy: {}
   template:
     metadata:

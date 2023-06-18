@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        app: web
+        name: web
   strategy: {}
   template:
     metadata:

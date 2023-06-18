@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        app: ratings
+        name: ratings
   strategy: {}
   template:
     metadata:

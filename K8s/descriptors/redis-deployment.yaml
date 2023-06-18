@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        app: redis
+        name: redis
   strategy: {}
   template:
     metadata:

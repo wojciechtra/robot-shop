@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
       matchLabels:
-        app: cart
+        name: cart
   strategy: {}
   template:
     metadata:
